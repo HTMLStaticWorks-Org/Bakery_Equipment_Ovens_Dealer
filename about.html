@@ -1,329 +1,318 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Gifted Pantry - About Our Story & Gifting Philosophy</title>
-  <meta name="description" content="Learn about The Gifted Pantry — our passion for artisan gourmet foods, our gifting philosophy, and our commitment to making every basket a beautiful, memorable experience.">
-  
+  <title>About Us | OVENCRAFT PRO – Commercial Bakery Equipment Specialists</title>
+  <meta name="description" content="Learn about OVENCRAFT PRO, your dedicated commercial bakery equipment dealer offering reliable ovens, dough processing machinery, and expert kitchen consultation.">
+  <meta property="og:title" content="About OVENCRAFT PRO | Commercial Bakery Equipment &amp; Ovens Dealer">
+  <meta property="og:description" content="Commercial bakery equipment expertise, reliable machinery solutions, and long-term support for professional bakeries.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/showroom-facility.png">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="index.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              light: '#fdf8ef', dark: '#1a1207',
-              primary: '#c8892a', primaryHover: '#a36d1a',
-              secondary: '#d9a752', secondaryHover: '#a36d1a', navy: '#2a1c0b',
-              accent: '#e0a84a', navy: '#1a3a2a',
-            },
-            slate: {
-              50: '#faf8f3', 100: '#f5f0e6', 200: '#e8ddc5',
-              300: '#d9c89f', 400: '#c4a96e', 500: '#a8883d',
-              600: '#896724', 700: '#664d17', 800: '#46330d',
-              850: '#352606', 900: '#221800', 950: '#1a1207',
-            }
-          },
-          fontFamily: { sans: ['Inter', 'sans-serif'], outfit: ['Outfit', 'sans-serif'] }
-        }
-      }
-    }
-  </script>
-  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Fonts: Plus Jakarta Sans & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col">
+<body>
 
-  <!-- ================= NAVBAR ================= -->
-  <nav class="glass-nav fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse group">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent flex items-center justify-center text-white shadow-md shadow-amber-500/20 animate-bounce">
-            <i data-lucide="gift" class="w-6 h-6"></i>
-          </div>
-          <span class="font-outfit text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
-            The<span class="text-brand-primary"> Gifted Pantry</span>
-          </span>
+  <!-- Top Utility Bar -->
+  <div class="top-utility-bar d-none d-md-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-4">
+        <span><i class="bi bi-Buildings me-1 text-wheat"></i> Commercial Bakery Machinery &amp; Industrial Ovens Dealer</span>
+        <span><i class="bi bi-clock me-1 text-wheat"></i> Mon–Fri: 8:00 AM – 6:00 PM (Editable Business Hours)</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="financing.html"><i class="bi bi-credit-card-2-front me-1"></i> Equipment Financing</a>
+        <span class="opacity-50">|</span>
+        <a href="services.html"><i class="bi bi-tools me-1"></i> Installation &amp; Technical Support</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-oc" aria-label="Main Navigation">
+        <a class="navbar-brand-oc" href="index.html" aria-label="OVENCRAFT PRO Home">
+          <img src="assets/images/logo.svg" alt="OVENCRAFT PRO Commercial Bakery Systems Logo" width="180" height="48">
         </a>
-        <div class="hidden lg:flex items-center space-x-1 rtl:space-x-reverse">
-          <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-amber-400 transition-colors">Home</a>
-          <a href="home2.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-amber-400 transition-colors">Home 2</a>
-          <a href="services.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-amber-400 transition-colors">Our Baskets</a>
-          <a href="gallery.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-amber-400 transition-colors">Corporate Gifting</a>
-          <a href="blog.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-amber-400 transition-colors">Customization</a>
-          <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-semibold transition-colors text-brand-primary dark:text-amber-400">About Us</a>
-          <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-amber-400 transition-colors">Contact</a>
-        </div>
-        <div class="hidden lg:flex items-center space-x-4 rtl:space-x-reverse">
-          <button class="rtl-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Direction">
-            <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
-          </button>
-          <button class="theme-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Theme">
-            <i data-lucide="sun" class="sun-icon w-5 h-5 hidden"></i>
-            <i data-lucide="moon" class="moon-icon w-5 h-5"></i>
-          </button>
-          <a href="quote.html" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-primary to-brand-accent text-white text-sm font-semibold hover:shadow-lg hover:shadow-amber-500/25 transition-all transform hover:-translate-y-0.5">Get a Quote</a>
-        </div>
-        <div class="flex items-center space-x-3 lg:hidden rtl:space-x-reverse">
-          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Open Menu">
-            <i data-lucide="menu" class="w-6 h-6"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div id="mobile-menu" class="hidden absolute top-20 left-0 right-0 glass-nav shadow-lg flex-col px-4 pt-4 pb-6 space-y-3 transition-all duration-300 transform opacity-0 -translate-y-4">
-      <a href="index.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home</a>
-      <a href="home2.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home 2</a>
-      <a href="services.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Our Baskets</a>
-      <a href="gallery.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Corporate Gifting</a>
-      <a href="blog.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Customization</a>
-      <a href="about.html" class="px-3 py-2 rounded-lg text-base font-semibold text-brand-primary bg-amber-50/50 dark:bg-amber-950/20">About Us</a>
-      <a href="contact.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Contact</a>
-      <div class="h-[1px] bg-slate-200 dark:bg-slate-800 my-2"></div>
-      <div class="toggle-container flex items-center justify-between space-x-3 rtl:space-x-reverse pt-1 pb-2">
-        <button class="rtl-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center bg-white dark:bg-slate-900" aria-label="Toggle Direction">
-          <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
-        </button>
-        <button class="theme-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-655 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center space-x-2 bg-white dark:bg-slate-900" aria-label="Toggle Theme">
-          <i data-lucide="sun" class="sun-icon w-4 h-4 hidden"></i>
-          <i data-lucide="moon" class="moon-icon w-4 h-4"></i>
-          <span class="text-xs font-bold tracking-wider dark:hidden">Dark Mode</span>
-          <span class="text-xs font-bold tracking-wider hidden dark:inline">Light Mode</span>
-        </button>
-      </div>
-      <div class="flex flex-col space-y-2.5">
-        <a href="quote.html" class="text-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-brand-primary to-brand-accent text-white text-sm font-semibold shadow-md shadow-amber-500/20">Get a Quote</a>
-      </div>
-      <button id="mobile-menu-close" class="absolute top-2 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-white">
-        <i data-lucide="x" class="w-5 h-5"></i>
-      </button>
-    </div>
-  </nav>
-  
-  <!-- ================= MAIN CONTENT ================= -->
-  <main class="flex-grow pt-20">
-    
-    <!-- 1. Hero Section -->
-    <section class="relative py-20 md:py-28 overflow-hidden text-white bg-slate-950 page-hero">
-      <img src="https://rusticbakery.com/cdn/shop/files/Just-Add-Cheese-Gift-Basket042_26.jpg?v=1786468526" 
-           alt="Artisan Gourmet Ingredients and Gift Baskets" 
-           class="absolute inset-0 w-full h-full object-cover opacity-90 dark:opacity-90">
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/45 to-slate-950/25 z-0"></div>
-      
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 relative z-10 animate-fade-in-up">
-        <div class="inline-flex items-center space-x-2 rtl:space-x-reverse px-3.5 py-1.5 rounded-full bg-slate-950/80 border border-white/20 text-amber-300 font-bold text-xs sm:text-sm tracking-wider uppercase backdrop-blur-md shadow-lg">
-          <i data-lucide="heart" class="w-4 h-4 text-amber-400"></i>
-          <span>Who We Are</span>
-        </div>
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-white leading-tight drop-shadow-md">
-          About The Gifted Pantry
-        </h1>
-        <p class="text-slate-100 max-w-xl mx-auto text-xs sm:text-sm md:text-base font-medium leading-relaxed drop-shadow-md">
-          Learn about our passion for gourmet artisan foods, our gifting philosophy, and our unwavering commitment to making every basket a beautiful, lasting memory.
-        </p>
-      </div>
-    </section>
 
-    <!-- 2. Our Story Section -->
-    <section class="py-16 bg-white dark:bg-slate-900">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          <div class="lg:col-span-7 space-y-6 text-left ltr:text-left rtl:text-right">
-            <span class="text-brand-primary font-semibold uppercase tracking-wider text-sm font-outfit">Founded in 2014</span>
-            <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-slate-900 dark:text-white leading-snug">
-              A Decade of Curating Gifting Joy
-            </h2>
-            <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-              The Gifted Pantry was founded by food lover and entrepreneur Claire Ashworth, who believed that the best gift you could give someone was the joy of discovering extraordinary artisan food. After years of scouring farmers markets, specialty food halls, and gourmet importers, Claire began building the curated collections that would become The Gifted Pantry — a company dedicated to making artisan gourmet gifting effortless and beautiful.
+        <!-- Hamburger Toggler (Aligned Right on Mobile & Tablet) -->
+        <button class="navbar-toggler navbar-toggler-oc d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#ovencraftNavbar" aria-controls="ovencraftNavbar" aria-expanded="false" aria-label="Toggle navigation menu">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse navbar-collapse-oc" id="ovencraftNavbar">
+          <ul class="navbar-nav navbar-nav-oc mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home2.html">Home 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="financing.html">Financing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="header-cta-wrap">
+            <div class="header-controls-group">
+              <button type="button" class="btn-header-util js-rtl-toggle" aria-label="Toggle RTL and LTR layout direction" title="Toggle RTL / LTR">
+                <i class="bi bi-text-left"></i><span>RTL</span>
+              </button>
+              <button type="button" class="btn-header-util js-theme-toggle" aria-label="Toggle Dark and Light theme" title="Toggle Theme">
+                <i class="bi bi-moon-stars"></i><span class="d-lg-none">Dark</span>
+              </button>
+            </div>
+            <a href="contact.html" class="btn-oc-primary">
+              <span>Request a Quote</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. ABOUT HERO BANNER -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8 reveal-item">
+            <ol class="breadcrumb-oc">
+              <li><a href="index.html">Home</a></li>
+              <li><i class="bi bi-chevron-right small"></i></li>
+              <li aria-current="page">About Us</li>
+            </ol>
+            <span class="eyebrow-badge eyebrow-badge-light d-block" style="width: fit-content;">
+              <i class="bi bi-building-check"></i> Specialist Equipment Dealership
+            </span>
+            <h1>Dedicated to the Craft and Engineering of Commercial Baking.</h1>
+            <p class="mb-0">
+              OVENCRAFT PRO partners with artisan bakeries, pastry kitchens, hotel culinary operations, and wholesale production facilities to supply dependable commercial ovens and dough processing equipment.
             </p>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-slate-100 dark:border-slate-800">
-              <div>
-                <h4 class="font-bold text-slate-900 dark:text-white text-lg">Artisan First</h4>
-                <p class="text-sm text-slate-500 dark:text-slate-400 mt-1 font-normal leading-relaxed">We work exclusively with small-batch, artisan producers who share our passion for quality and craft.</p>
-              </div>
-              <div>
-                <h4 class="font-bold text-slate-900 dark:text-white text-lg">Beauti Packaged</h4>
-                <p class="text-sm text-slate-500 dark:text-slate-400 mt-1 font-normal leading-relaxed">Every basket is a work of art — thoughtfully arranged, elegantly wrapped, and ready to impress.</p>
-              </div>
-              <div>
-                <h4 class="font-bold text-slate-900 dark:text-white text-lg">Inclusively Curated</h4>
-                <p class="text-sm text-slate-500 dark:text-slate-400 mt-1 font-normal leading-relaxed">From vegan to gluten-free to kosher, we ensure everyone receives a delicious, appropriate gift.</p>
-              </div>
-            </div>
           </div>
-
-          <div class="lg:col-span-5 relative">
-            <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-brand-primary to-brand-accent opacity-10 blur-xl dark:opacity-20"></div>
-            <div class="relative glass-card p-3 rounded-3xl shadow-xl">
-              <img src="https://brownliving.in/cdn/shop/files/luxury-conscious-gift-set-bnwd07-1-bare-necessities-artisanal-handcrafted-basket-artisanal-handcrafted-basket-5316669.jpg?v=1781541670" 
-                   alt="Beautifully curated gift basket ready for delivery" 
-                   class="rounded-2xl w-full h-auto aspect-[4/3] lg:h-[340px] lg:aspect-auto object-cover object-center">
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
 
-    <!-- 3. Quality Standards Section -->
-    <section class="py-16 bg-slate-50 dark:bg-slate-950 relative overflow-hidden">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <span class="text-brand-primary font-semibold uppercase tracking-wider text-sm">Our Standards</span>
-          <h2 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-900 dark:text-white">
-            Quality, Provenance &amp; Presentation
-          </h2>
-          <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm font-normal">
-            Every product in every basket meets our rigorous sourcing standards — from farm to presentation, we never compromise.
+    <!-- 2. OUR COMPANY STORY -->
+    <section class="section-padding bg-surface">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal-item">
+            <span class="eyebrow-badge"><i class="bi bi-journal-bookmark"></i> Our Company Story</span>
+            <h2 class="section-title">Bridging Industrial Engineering With Real-World Bakery Workflows</h2>
+            <p>
+              OVENCRAFT PRO was established to address a critical challenge faced by professional bakers: general restaurant supply houses rarely understand the thermal physics, steam requirements, and dough hydration demands of dedicated baking production.
+            </p>
+            <p>
+              Choosing between a stone-hearth deck oven and a rotary rack oven—or sizing a spiral mixer to match fermentation and proofing schedules—requires domain-specific expertise. We built our dealership around a focused mission: curating commercial-grade baking machinery and pairing it with knowledgeable consultation.
+            </p>
+            <p class="mb-0">
+              Whether a client is launching an independent neighborhood Boulangerie or expanding a multi-shift wholesale bakery line, our team provides structured equipment selection guidance that aligns floor space, utility requirements, and output goals.
+            </p>
+          </div>
+          <div class="col-lg-6 reveal-item">
+            <div class="rounded-4 overflow-hidden shadow-sm border" style="border-color: var(--oc-border) !important;">
+              <img src="assets/images/showroom-facility.png" alt="OVENCRAFT PRO commercial bakery equipment showroom with stainless-steel deck ovens and mixers" class="w-100" style="height: 440px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. OUR MISSION & VISION -->
+    <section class="section-padding bg-stone-cream">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6 reveal-item">
+            <div class="pillar-box p-4 p-md-5">
+              <div class="pillar-icon"><i class="bi bi-bullseye"></i></div>
+              <span class="eyebrow-badge mb-2">Our Mission</span>
+              <h2 class="h3">Empowering Bakers With Dependable Production Machinery</h2>
+              <p class="mb-0">
+                To equip professional bakeries and commercial foodservice operators with reliable ovens, precision dough machinery, and transparent technical consultation—enabling consistent bake quality, safe kitchen ergonomics, and sustainable operational growth.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 reveal-item">
+            <div class="pillar-box p-4 p-md-5">
+              <div class="pillar-icon"><i class="bi bi-eye"></i></div>
+              <span class="eyebrow-badge mb-2">Our Vision</span>
+              <h2 class="h3">Setting the Standard for Commercial Bakery Equipment Dealerships</h2>
+              <p class="mb-0">
+                To be the most trusted long-term equipment partner for commercial baking businesses by combining industrial-grade machinery solutions with attentive pre-purchase guidance, smooth installation coordination, and responsive after-sales support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. OUR EQUIPMENT EXPERTISE -->
+    <section class="section-padding bg-cream">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 order-2 order-lg-1 reveal-item">
+            <div class="rounded-4 overflow-hidden shadow-sm border" style="border-color: var(--oc-border) !important;">
+              <img src="assets/images/bakery-production-line.png" alt="Industrial bakery production facility featuring commercial stainless-steel ovens and dough machinery" class="w-100" style="height: 440px; object-fit: cover;" loading="lazy">
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 reveal-item">
+            <span class="eyebrow-badge"><i class="bi bi-gear-wide-connected"></i> Our Equipment Expertise</span>
+            <h2 class="section-title">Comprehensive Knowledge Across Every Bakery Production Zone</h2>
+            <p>
+              A high-performing bakery operates as an integrated system where each station feeds the next without delay. Our specialists evaluate your entire production sequence:
+            </p>
+            <div class="d-flex flex-column gap-3 mt-4">
+              <div class="p-3 rounded-3 bg-surface border d-flex gap-3 align-items-start" style="border-color: var(--oc-border) !important;">
+                <i class="bi bi-1-circle-fill text-copper fs-4"></i>
+                <div>
+                  <h3 class="h6 mb-1">Mixing &amp; Dough Development</h3>
+                  <p class="small mb-0">Matching spiral and planetary mixer capacities to flour weight, hydration percentages, and batch turnarounds.</p>
+                </div>
+              </div>
+              <div class="p-3 rounded-3 bg-surface border d-flex gap-3 align-items-start" style="border-color: var(--oc-border) !important;">
+                <i class="bi bi-2-circle-fill text-copper fs-4"></i>
+                <div>
+                  <h3 class="h6 mb-1">Dividing, Rounding &amp; Lamination</h3>
+                  <p class="small mb-0">Streamlining portion scaling and pastry sheeting with hydraulic dividers, rounders, and reversible dough sheeters.</p>
+                </div>
+              </div>
+              <div class="p-3 rounded-3 bg-surface border d-flex gap-3 align-items-start" style="border-color: var(--oc-border) !important;">
+                <i class="bi bi-3-circle-fill text-copper fs-4"></i>
+                <div>
+                  <h3 class="h6 mb-1">Fermentation &amp; Thermal Baking</h3>
+                  <p class="small mb-0">Balancing retarder-proofer rack capacity with stone-hearth deck, convection, or rotary rack oven throughput.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. WHY PROFESSIONAL BAKERIES CHOOSE US -->
+    <section class="section-padding bg-surface">
+      <div class="container">
+        <div class="section-header text-center reveal-item">
+          <span class="eyebrow-badge"><i class="bi bi-award"></i> Why Professional Bakeries Choose Us</span>
+          <h2 class="section-title">Practical Dealer Advantages Built Around Your Kitchen</h2>
+          <p class="mb-0">
+            We support bakery owners and culinary directors with clear technical documentation and straightforward consultation.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="glass-card p-8 rounded-2xl border border-slate-100 dark:border-slate-800 flex flex-col items-center text-center space-y-4">
-            <div class="p-4 bg-white dark:bg-slate-900 rounded-2xl text-brand-primary shadow-sm">
-              <i data-lucide="award" class="w-7 h-7"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">Artisan Provenance</h3>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
-                Every cheese, chocolate, and specialty food is sourced from certified artisan producers with traceable, ethical supply chains.
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal-item">
+            <div class="pillar-box">
+              <div class="pillar-icon"><i class="bi bi-rulers"></i></div>
+              <h3>Equipment Selection Guidance</h3>
+              <p class="mb-0">
+                We analyze your menu items, pan dimensions, and peak hourly targets to recommend machinery sized accurately for your current operation and future expansion.
               </p>
             </div>
           </div>
 
-          <div class="glass-card p-8 rounded-2xl border border-slate-100 dark:border-slate-800 flex flex-col items-center text-center space-y-4">
-            <div class="p-4 bg-white dark:bg-slate-900 rounded-2xl text-brand-secondary shadow-sm">
-              <i data-lucide="package-check" class="w-7 h-7"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">Premium Packaging</h3>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
-                All baskets are assembled with FSC-certified packaging materials, premium satin ribbons, and food-safe insulating liners for freshness.
+          <div class="col-md-6 col-lg-4 reveal-item">
+            <div class="pillar-box">
+              <div class="pillar-icon"><i class="bi bi-diagram-3"></i></div>
+              <h3>Workflow &amp; Footprint Planning</h3>
+              <p class="mb-0">
+                Our team reviews door swing clearances, rack turning radii, hood overhangs, and ergonomic distance between prep benches, proofers, and ovens.
               </p>
             </div>
           </div>
 
-          <div class="glass-card p-8 rounded-2xl border border-slate-100 dark:border-slate-800 flex flex-col items-center text-center space-y-4">
-            <div class="p-4 bg-white dark:bg-slate-900 rounded-2xl text-amber-500 shadow-sm">
-              <i data-lucide="leaf" class="w-7 h-7"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">Sustainable Choices</h3>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
-                We prioritize eco-conscious producers, organic certifications, and sustainable packaging across our entire range of gourmet gifts.
-              </p>
-            </div>
-          </div>
-
-          <div class="glass-card p-8 rounded-2xl border border-slate-100 dark:border-slate-800 flex flex-col items-center text-center space-y-4">
-            <div class="p-4 bg-white dark:bg-slate-900 rounded-2xl text-rose-500 shadow-sm">
-              <i data-lucide="shield-check" class="w-7 h-7"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">Safe &amp; Compliant</h3>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
-                Full allergen transparency, clear dietary labeling, and food-grade certified packaging for every single basket we produce.
+          <div class="col-md-6 col-lg-4 reveal-item">
+            <div class="pillar-box">
+              <div class="pillar-icon"><i class="bi bi-file-earmark-check"></i></div>
+              <h3>Transparent Utility Readiness</h3>
+              <p class="mb-0">
+                We provide clear electrical, gas, water, and ventilation preparation checklists so your general contractor and trades can prepare the site accurately.
               </p>
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
-    <!-- 4. Our Approach Section -->
-    <section class="py-16 bg-white dark:bg-slate-900">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          <div class="lg:col-span-5 relative order-last lg:order-first">
-            <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-brand-secondary to-brand-primary opacity-10 blur-xl dark:opacity-20"></div>
-            <div class="relative glass-card p-3 rounded-3xl shadow-xl">
-              <img src="https://tastyribbon.com/cdn/shop/files/Tasty_Ribbon_March_263448_Resized.jpg?v=1785329567&width=800" 
-                   alt="Gourmet artisan food selection process" 
-                   class="rounded-2xl w-full h-auto aspect-[4/3] lg:h-[340px] lg:aspect-auto object-cover object-center">
+    <!-- 6. QUALITY & RELIABILITY -->
+    <section class="section-padding bg-espresso">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal-item">
+            <span class="eyebrow-badge eyebrow-badge-light"><i class="bi bi-shield-fill-check"></i> Quality &amp; Reliability</span>
+            <h2 class="section-title">Engineered for Continuous Commercial Duty Cycles</h2>
+            <p>
+              Commercial baking environments subject machinery to high ambient temperatures, airborne flour dust, humidity, and heavy daily mechanical loads. Every piece of equipment in our catalogue is evaluated against strict durability benchmarks:
+            </p>
+            <ul class="oc-feature-list border-0 pt-2">
+              <li class="text-white"><i class="bi bi-check2-circle text-wheat"></i><span><strong>Heavy-Gauge Stainless Steel Construction:</strong> Hygienic, corrosion-resistant surfaces built for rigorous daily sanitation.</span></li>
+              <li class="text-white"><i class="bi bi-check2-circle text-wheat"></i><span><strong>High-Mass Thermal Retention:</strong> Heavy insulation and precision chamber sealing for consistent deck and rack heat stability.</span></li>
+              <li class="text-white"><i class="bi bi-check2-circle text-wheat"></i><span><strong>Operator Safety &amp; Ergonomics:</strong> Interlocked bowl guards, emergency stop controls, and cool-touch thermal viewing glass.</span></li>
+              <li class="text-white"><i class="bi bi-check2-circle text-wheat"></i><span><strong>Service-Accessible Architecture:</strong> Organized electrical panels and accessible drive components that simplify routine maintenance.</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-6 reveal-item">
+            <div class="rounded-4 overflow-hidden border" style="border-color: rgba(230, 182, 92, 0.35) !important;">
+              <img src="assets/images/consultation-planning.png" alt="OVENCRAFT PRO equipment specialists reviewing technical blueprints in the showroom" class="w-100" style="height: 410px; object-fit: cover;" loading="lazy">
             </div>
           </div>
-
-          <div class="lg:col-span-7 space-y-6 text-left ltr:text-left rtl:text-right">
-            <span class="text-brand-secondary font-semibold uppercase tracking-wider text-sm">Our Gifting Philosophy</span>
-            <h2 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-900 dark:text-white leading-snug">
-              Thoughtful Curation, Joyful Discovery
-            </h2>
-            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-              We believe that the best gift baskets don't just contain good food — they tell a story, spark discovery, and invite the recipient to slow down and savor something extraordinary. That's why we spend so much time seeking out truly special artisan producers: the small dairy making exceptional aged cheddars, the chocolatier using rare heritage cacao beans, the beekeeper harvesting single-floral raw honey.
-            </p>
-            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-              When our customers send a basket, they're not just giving food — they're giving an experience, a moment of delight, and a connection to the passionate makers behind every product.
-            </p>
-            
-            <div class="flex flex-col sm:flex-row gap-3 pt-2">
-              <a href="contact.html" class="px-6 py-3 rounded-xl bg-brand-primary hover:bg-brand-primaryHover text-white font-semibold shadow-md shadow-amber-500/20 transition-colors whitespace-nowrap text-center">
-                Order a Basket
-              </a>
-              <a href="services.html" class="px-6 py-3 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-200 font-semibold hover:bg-amber-50 hover:text-brand-primary hover:border-brand-primary dark:hover:bg-slate-800 dark:hover:text-white transition-all duration-300 whitespace-nowrap text-center">
-                Browse Collections
-              </a>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
 
-    <!-- 5. Our Commitment Section -->
-    <section class="py-16 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white relative overflow-hidden">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div class="lg:col-span-7 space-y-6 text-left ltr:text-left rtl:text-right">
-            <span class="text-brand-primary font-semibold uppercase tracking-wider text-sm font-outfit">Why The Gifted Pantry</span>
-            <h2 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-900 dark:text-white leading-snug">
-              Our Commitment to Exceptional Gifting
-            </h2>
-            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-              At The Gifted Pantry, we believe gifting is an act of love. Whether it's a small token of appreciation or a grand corporate gesture, we put the same care and attention into every basket — because the person receiving it deserves to feel truly special.
-            </p>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
-              <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
-                <div class="p-2.5 bg-white dark:bg-slate-800 rounded-xl text-brand-primary shadow-sm border border-slate-100 dark:border-slate-700 flex-shrink-0">
-                  <i data-lucide="heart" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <h3 class="font-bold text-slate-900 dark:text-white text-base">Curated with Heart</h3>
-                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">Each basket is curated by our gifting specialists with genuine care for the recipient's tastes and the occasion.</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
-                <div class="p-2.5 bg-white dark:bg-slate-800 rounded-xl text-brand-primary shadow-sm border border-slate-100 dark:border-slate-700 flex-shrink-0">
-                  <i data-lucide="star" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <h3 class="font-bold text-slate-900 dark:text-white text-base">Premium at Every Level</h3>
-                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">From the gourmet products inside to the final bow on the packaging — every detail reflects our commitment to excellence.</p>
-                </div>
-              </div>
+    <!-- 7. OUR CUSTOMER COMMITMENT -->
+    <section class="section-padding bg-cream">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 reveal-item">
+            <div class="rounded-4 overflow-hidden shadow-sm border" style="border-color: var(--oc-border) !important;">
+              <img src="assets/images/maintenance-support.png" alt="Commercial bakery service technician performing diagnostic inspection on an industrial oven" class="w-100" style="height: 380px; object-fit: cover;" loading="lazy">
             </div>
           </div>
-
-          <div class="lg:col-span-5 relative">
-            <div class="relative glass-card p-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/60 shadow-lg text-left ltr:text-left rtl:text-right space-y-6">
-              <h3 class="text-xl font-bold font-outfit text-slate-900 dark:text-white">Our Track Record</h3>
-              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-                Over a decade of curating extraordinary gifting experiences for individuals, families, and hundreds of businesses across the country.
-              </p>
-              <div class="flex items-center space-x-4 rtl:space-x-reverse bg-slate-100/80 dark:bg-slate-900/80 p-4 rounded-2xl border border-slate-200 dark:border-slate-700/50">
-                <div class="text-3xl font-extrabold text-brand-primary">12k+</div>
-                <div class="text-[11px] text-slate-500 dark:text-slate-400 font-semibold uppercase tracking-wider leading-snug">
-                  Gourmet gift baskets lovingly curated and delivered since 2014
+          <div class="col-lg-7 reveal-item">
+            <span class="eyebrow-badge"><i class="bi bi-people"></i> Our Customer Commitment</span>
+            <h2 class="section-title">Building Long-Term Relationships With Every Bakery We Equip</h2>
+            <p>
+              Our relationship with your bakery does not end when a crate arrives at your loading dock. We view every equipment order as the beginning of a multi-year partnership supporting your production team.
+            </p>
+            <div class="row g-3 mt-2">
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 bg-surface border h-100" style="border-color: var(--oc-border) !important;">
+                  <h3 class="h6 text-espresso mb-1"><i class="bi bi-headset text-copper me-2"></i>Responsive Assistance</h3>
+                  <p class="small mb-0">Direct access to equipment specialists who understand your exact model configuration and operational setup.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 bg-surface border h-100" style="border-color: var(--oc-border) !important;">
+                  <h3 class="h6 text-espresso mb-1"><i class="bi bi-arrow-repeat text-copper me-2"></i>Scalable Upgrades</h3>
+                  <p class="small mb-0">Modular planning that helps you add additional oven decks, proofer racks, or dividing systems as demand grows.</p>
                 </div>
               </div>
             </div>
@@ -332,243 +321,119 @@
       </div>
     </section>
 
-    <!-- 6. Team Section -->
-    <section class="py-16 bg-white dark:bg-slate-900">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        
-        <div class="max-w-3xl mx-auto mb-16 space-y-4">
-          <span class="text-brand-primary font-semibold uppercase tracking-wider text-sm font-outfit">Our Team</span>
-          <h2 class="text-3xl sm:text-4xl font-bold font-outfit text-slate-900 dark:text-white">
-            Meet Our Gifting Specialists
-          </h2>
-          <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base font-normal">
-            Our passionate team brings together expertise in artisan food, design, and customer experience to create gifting moments that truly resonate.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="flex flex-col bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-800 group">
-            <div class="overflow-hidden h-96 relative">
-              <img src="https://thumbs.dreamstime.com/b/confident-indian-professional-woman-casual-posing-vertical-portrait-beautiful-young-looking-camera-keeping-hands-folded-340188923.jpg" 
-                   alt="Claire Mannan, Founder &amp; Chief Gifting Officer" 
-                   class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
-            </div>
-            <div class="p-6 text-left ltr:text-left rtl:text-right space-y-2">
-              <h3 class="text-xl font-bold text-slate-900 dark:text-white font-outfit">Claire Mannan</h3>
-              <p class="text-sm text-brand-primary font-semibold uppercase tracking-wider">Founder &amp; Chief Gifting Officer</p>
-              <p class="text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed pt-1">
-                With a background in food journalism and 10+ years curating artisan collections, Claire's passion for extraordinary gourmet food is the heart of every Gifted Pantry basket.
-              </p>
-            </div>
-          </div>
-
-          <div class="flex flex-col bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-800 group">
-            <div class="overflow-hidden h-96 relative">
-              <img src="https://static.vecteezy.com/system/resources/thumbnails/079/512/416/small_2x/a-confident-and-smiling-young-businessman-in-a-navy-suit-with-a-blue-tie-standing-with-arms-crossed-photo.jpg" 
-                   alt="Prathi Mannan, Head of Sourcing" 
-                   class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
-            </div>
-            <div class="p-6 text-left ltr:text-left rtl:text-right space-y-2">
-              <h3 class="text-xl font-bold text-slate-900 dark:text-white font-outfit">Prathi Mannan</h3>
-              <p class="text-sm text-brand-primary font-semibold uppercase tracking-wider">Head of Artisan Sourcing</p>
-              <p class="text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed pt-1">
-                A certified cheesemonger and fine wine specialist, Daniel travels the world discovering exceptional small-batch producers to add to our ever-evolving gourmet portfolio.
-              </p>
-            </div>
-          </div>
-
-          <div class="last-card-md flex flex-col bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-800 group">
-            <div class="overflow-hidden h-96 relative">
-              <img src="https://t4.ftcdn.net/jpg/03/02/76/57/360_F_302765753_5vrPxvGXSl4X63p9WeWTxliKRPeVE5Y9.jpg" 
-                   alt="Emma Voss, Creative Packaging Director" 
-                   class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
-            </div>
-            <div class="p-6 text-left ltr:text-left rtl:text-right space-y-2">
-              <h3 class="text-xl font-bold text-slate-900 dark:text-white font-outfit">Emma Voss</h3>
-              <p class="text-sm text-amber-600 font-semibold uppercase tracking-wider">Creative Packaging Director</p>
-              <p class="text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed pt-1">
-                A visual designer with a background in luxury brand packaging, Emma ensures every basket we assemble is as beautiful to look at as it is delicious to explore.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 7. Closing Call-To-Action (CTA) Section -->
-    <section class="py-20 lg:py-24 bg-slate-50 dark:bg-slate-950 relative overflow-hidden transition-colors">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
-        <div class="closing-cta-card rounded-3xl overflow-hidden text-slate-900 dark:text-white p-8 sm:p-12 lg:p-16 relative transition-colors">
-          
-          <!-- Ambient Glow Accents -->
-          <div class="absolute -top-24 -right-24 w-80 h-80 bg-brand-primary/10 dark:bg-brand-primary/20 rounded-full blur-3xl pointer-events-none"></div>
-          <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-brand-accent/10 dark:bg-brand-accent/20 rounded-full blur-3xl pointer-events-none"></div>
-          
-          <!-- Subtle Decorative Background Watermark Icon -->
-          <div class="absolute right-6 -bottom-10 opacity-10 dark:opacity-5 text-amber-500 dark:text-amber-300 pointer-events-none hidden lg:block">
-            <i data-lucide="heart" class="w-72 h-72"></i>
-          </div>
-
-          <div class="relative z-10 max-w-3xl mx-auto text-center space-y-6">
-            
-            <!-- Badge -->
-            <div class="inline-flex items-center space-x-2 rtl:space-x-reverse px-4 py-1.5 rounded-full bg-amber-500/10 dark:bg-amber-500/15 border border-amber-500/30 dark:border-amber-400/30 text-amber-800 dark:text-amber-300 text-xs sm:text-sm font-semibold uppercase tracking-wider backdrop-blur-md">
-              <i data-lucide="heart" class="w-4 h-4 text-brand-primary dark:text-amber-400 flex-shrink-0"></i>
-              <span>Gifting With A Personal Touch</span>
-            </div>
-
-            <!-- Heading -->
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 dark:text-white tracking-tight leading-tight">
-              Share the Joy of <span class="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-700 dark:from-amber-200 dark:via-amber-400 dark:to-amber-200 bg-clip-text text-transparent">Exceptional Artisan Food</span>
-            </h2>
-
-            <!-- Paragraph -->
-            <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base md:text-lg max-w-2xl mx-auto font-normal leading-relaxed">
-              Every celebration, thank you, or holiday greeting deserves more than an ordinary gift. Partner with The Gifted Pantry team to craft an unforgettable gifting moment.
+    <!-- 8. CTA – LET'S BUILD YOUR BAKERY -->
+    <section class="section-padding cta-banner-section">
+      <div class="container">
+        <div class="row align-items-center justify-content-between g-4 reveal-item">
+          <div class="col-lg-7">
+            <span class="eyebrow-badge eyebrow-badge-light"><i class="bi bi-building-add"></i> Let's Build Your Bakery</span>
+            <h2 class="section-title text-white mb-3">Partner With OVENCRAFT PRO for Your Next Equipment Project</h2>
+            <p class="mb-0 text-white-50 fs-5">
+              Whether you are replacing a single mixer or planning a complete commercial bakery production floor, our team is ready to assist.
             </p>
-
-            <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-3 w-full max-w-md sm:max-w-none mx-auto">
-              <a href="services.html"
-                class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-primary to-brand-accent hover:from-amber-600 hover:to-amber-500 text-white font-bold text-center shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all transform hover:-translate-y-0.5 flex items-center justify-center space-x-2 rtl:space-x-reverse">
-                <i data-lucide="gift" class="w-4 h-4"></i>
-                <span>Explore Curated Baskets</span>
+          </div>
+          <div class="col-lg-5 text-lg-end">
+            <div class="d-flex flex-wrap gap-3 justify-content-lg-end">
+              <a href="contact.html" class="btn-oc-wheat">
+                <span>Request a Quote</span>
+                <i class="bi bi-arrow-up-right"></i>
               </a>
-              <a href="contact.html"
-                class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 hover:border-amber-400 shadow-sm dark:bg-white/10 dark:hover:bg-white/20 dark:text-white dark:border-white/20 font-bold text-center backdrop-blur-md transition-all flex items-center justify-center space-x-2 rtl:space-x-reverse">
-                <i data-lucide="message-square" class="w-4 h-4 text-brand-primary dark:text-amber-300"></i>
-                <span>Contact Our Specialists</span>
+              <a href="products.html" class="btn-oc-light">
+                <span>Explore Equipment</span>
               </a>
             </div>
-
-            <!-- Trust / Guarantee Highlights -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-10 mt-10 border-t border-amber-200/70 dark:border-white/10 text-left rtl:text-right">
-              <div class="flex items-center space-x-3 rtl:space-x-reverse">
-                <div class="w-10 h-10 rounded-xl bg-amber-100/70 dark:bg-amber-500/10 border border-amber-300/60 dark:border-amber-400/20 flex items-center justify-center text-brand-primary dark:text-amber-400 flex-shrink-0">
-                  <i data-lucide="history" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <div class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">10+ Years Curating</div>
-                  <div class="text-[11px] text-slate-500 dark:text-slate-400">Proud heritage of taste</div>
-                </div>
-              </div>
-
-              <div class="flex items-center space-x-3 rtl:space-x-reverse">
-                <div class="w-10 h-10 rounded-xl bg-amber-100/70 dark:bg-amber-500/10 border border-amber-300/60 dark:border-amber-400/20 flex items-center justify-center text-brand-primary dark:text-amber-400 flex-shrink-0">
-                  <i data-lucide="users" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <div class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">12k+ Delighted Clients</div>
-                  <div class="text-[11px] text-slate-500 dark:text-slate-400">Nationwide recipients</div>
-                </div>
-              </div>
-
-              <div class="flex items-center space-x-3 rtl:space-x-reverse">
-                <div class="w-10 h-10 rounded-xl bg-amber-100/70 dark:bg-amber-500/10 border border-amber-300/60 dark:border-amber-400/20 flex items-center justify-center text-brand-primary dark:text-amber-400 flex-shrink-0">
-                  <i data-lucide="sparkles" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <div class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">Small-Batch Makers</div>
-                  <div class="text-[11px] text-slate-500 dark:text-slate-400">Sustainably sourced</div>
-                </div>
-              </div>
-
-              <div class="flex items-center space-x-3 rtl:space-x-reverse">
-                <div class="w-10 h-10 rounded-xl bg-amber-100/70 dark:bg-amber-500/10 border border-amber-300/60 dark:border-amber-400/20 flex items-center justify-center text-brand-primary dark:text-amber-400 flex-shrink-0">
-                  <i data-lucide="shield-check" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <div class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">Delight Guaranteed</div>
-                  <div class="text-[11px] text-slate-500 dark:text-slate-400">Flawless presentation</div>
-                </div>
-              </div>
-            </div>
-
           </div>
-
         </div>
-
       </div>
     </section>
-
   </main>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="glass-footer py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 mb-12">
-        <div class="md:col-span-1 lg:col-span-4 space-y-4 text-left rtl:text-right">
-          <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
-            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent flex items-center justify-center text-white shadow-md shadow-amber-500/20">
-              <i data-lucide="gift" class="w-5 h-5"></i>
-            </div>
-            <span class="font-outfit text-2xl font-bold tracking-tight footer-brand-name">
-              The<span class="text-brand-primary"> Gifted Pantry</span>
-            </span>
+  <!-- Consistent Premium Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-4">
+          <a href="index.html" class="d-inline-block mb-3" aria-label="OVENCRAFT PRO Home">
+            <img src="assets/images/logo-light.svg" alt="OVENCRAFT PRO Commercial Bakery Systems Logo" width="180" height="48">
           </a>
-          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-normal">
-            Premium gourmet food gift baskets for every occasion. Artisan cheeses, fine chocolates, curated wines, and seasonal delicacies, beautifully packaged and delivered with care.
+          <p class="small mb-4" style="color: rgba(250, 247, 240, 0.75);">
+            OVENCRAFT PRO is a dedicated commercial bakery equipment and industrial ovens dealer helping artisan bakeries, pastry kitchens, and wholesale production facilities build dependable baking lines.
           </p>
-          <div class="flex items-center space-x-3 rtl:space-x-reverse pt-2">
-            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-100 dark:bg-slate-800 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="Facebook">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-            </a>
-            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-100 dark:bg-slate-800 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="Instagram">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-            </a>
-            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-100 dark:bg-slate-800 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="LinkedIn">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
+          <div class="social-links-oc">
+            <a href="contact.html" aria-label="Connect on LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="products.html" aria-label="Watch Equipment Demos on YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="about.html" aria-label="Follow Showroom Updates on Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="services.html" aria-label="Connect on Facebook"><i class="bi bi-facebook"></i></a>
           </div>
         </div>
-        <div class="md:col-span-1 lg:col-span-2 space-y-4 text-left rtl:text-right">
-          <h4 class="text-white font-bold text-sm uppercase tracking-wider">Collections</h4>
-          <ul class="space-y-2.5 text-sm font-medium">
-            <li><a href="services.html" class="hover:text-brand-primary transition-colors">Cheese &amp; Charcuterie</a></li>
-            <li><a href="services.html" class="hover:text-brand-primary transition-colors">Chocolates &amp; Sweets</a></li>
-            <li><a href="services.html" class="hover:text-brand-primary transition-colors">Wine &amp; Gourmet</a></li>
-            <li><a href="services.html" class="hover:text-brand-primary transition-colors">Seasonal &amp; Holiday</a></li>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right small"></i> Home</a></li>
+            <li><a href="home2.html"><i class="bi bi-chevron-right small"></i> Home 2</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small"></i> About Us</a></li>
+            <li><a href="products.html"><i class="bi bi-chevron-right small"></i> Products</a></li>
+            <li><a href="financing.html"><i class="bi bi-chevron-right small"></i> Financing</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right small"></i> Services</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small"></i> Request a Quote</a></li>
           </ul>
         </div>
-        <div class="md:col-span-1 lg:col-span-2 space-y-4 text-left rtl:text-right">
-          <h4 class="text-white font-bold text-sm uppercase tracking-wider">Company</h4>
-          <ul class="space-y-2.5 text-sm font-medium">
-            <li><a href="index.html" class="hover:text-brand-primary transition-colors">Home</a></li>
-            <li><a href="about.html" class="hover:text-brand-primary transition-colors">About Us</a></li>
-            <li><a href="gallery.html" class="hover:text-brand-primary transition-colors">Corporate Gifting</a></li>
-            <li><a href="blog.html" class="hover:text-brand-primary transition-colors">Customization</a></li>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <h3 class="footer-heading">Equipment Categories</h3>
+          <ul class="footer-links">
+            <li><a href="products.html?category=ovens"><i class="bi bi-chevron-right small"></i> Commercial Deck Ovens</a></li>
+            <li><a href="products.html?category=ovens"><i class="bi bi-chevron-right small"></i> Rotary &amp; Convection Ovens</a></li>
+            <li><a href="products.html?category=mixing"><i class="bi bi-chevron-right small"></i> Spiral &amp; Planetary Mixers</a></li>
+            <li><a href="products.html?category=dough-processing"><i class="bi bi-chevron-right small"></i> Dough Sheeters &amp; Dividers</a></li>
+            <li><a href="products.html?category=proofing"><i class="bi bi-chevron-right small"></i> Commercial Proofing Systems</a></li>
+            <li><a href="products.html?category=accessories"><i class="bi bi-chevron-right small"></i> Display &amp; Stainless Prep</a></li>
           </ul>
         </div>
-        <div class="md:col-span-1 lg:col-span-4 space-y-4 text-left rtl:text-right">
-          <h4 class="text-white font-bold text-sm uppercase tracking-wider font-outfit">Contact Us</h4>
-          <ul class="space-y-2.5 text-sm font-medium">
-            <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
-              <i data-lucide="phone" class="w-4 h-4 text-brand-primary flex-shrink-0"></i>
-              <span>+1 (800) 555-GIFT</span>
+
+        <div class="col-md-4 col-lg-3">
+          <h3 class="footer-heading">Dealer Contact &amp; Support</h3>
+          <ul class="list-unstyled small mb-0 d-flex flex-column gap-2" style="color: rgba(250, 247, 240, 0.78);">
+            <li class="d-flex align-items-start gap-2">
+              <i class="bi bi-geo-alt text-wheat mt-1"></i>
+              <span>[Editable Business Address: Commercial Showroom &amp; Distribution Center]</span>
             </li>
-            <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
-              <i data-lucide="mail" class="w-4 h-4 text-brand-primary flex-shrink-0"></i>
-              <span class="break-all">hello@giftedpantry.com</span>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-telephone text-wheat"></i>
+              <span>[Editable Phone: +1 (000) 000-0000]</span>
             </li>
-            <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
-              <i data-lucide="clock" class="w-4 h-4 text-brand-primary flex-shrink-0"></i>
-              <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-envelope text-wheat"></i>
+              <span>[Editable Email: quotes@your-domain.example]</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-clock text-wheat"></i>
+              <span>Mon–Fri: 8:00 AM – 6:00 PM</span>
             </li>
           </ul>
         </div>
       </div>
-      <div class="footer-copyright pt-8 border-t flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm font-medium">
-        <p>&copy; 2026 The Gifted Pantry. All rights reserved.</p>
-        <div class="flex items-center space-x-4 rtl:space-x-reverse mt-4 sm:mt-0">
-          <a href="#" class="hover:text-slate-900 dark:text-white transition-colors">Privacy Policy</a>
-          <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+
+      <div class="footer-bottom">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+          <div>
+            &copy; 2026 <strong>OVENCRAFT PRO</strong>. Commercial Bakery Equipment, Ovens &amp; Professional Kitchen Solutions. All rights reserved.
+          </div>
+          <div class="d-flex gap-3">
+            <a href="services.html" class="text-decoration-none" style="color: rgba(250, 247, 240, 0.7);">Technical Support</a>
+            <span>&bull;</span>
+            <a href="financing.html" class="text-decoration-none" style="color: rgba(250, 247, 240, 0.7);">Financing Options</a>
+            <span>&bull;</span>
+            <a href="contact.html" class="text-decoration-none" style="color: rgba(250, 247, 240, 0.7);">Quote Inquiries</a>
+          </div>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <!-- Bootstrap 5.3 JS Bundle & Main Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
